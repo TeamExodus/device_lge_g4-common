@@ -328,6 +328,7 @@ on boot
 # Double tap to wake gesture
     chown system radio /sys/devices/virtual/input/lge_touch/tap2wake
     chmod 664 /sys/devices/virtual/input/lge_touch/tap2wake
+    write /sys/devices/virtual/input/lge_touch/tap2wake 1
 
     chown media media /sys/devices/soc.0/qcom,msm-pcm-routing.39/cfg_string_rx
     chown media media /sys/devices/soc.0/qcom,msm-pcm-routing.39/cfg_string_tx
