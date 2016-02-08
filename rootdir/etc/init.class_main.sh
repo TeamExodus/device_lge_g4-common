@@ -45,9 +45,6 @@ cp -r /firmware/image/modem_pr/mbn_ota/* /data/misc/radio/modem_config
 chown -hR radio.radio /data/misc/radio/modem_config
 echo 1 > /data/misc/radio/copy_complete
 
-# grep the modem partition for baseband version and set it
-setprop gsm.version.baseband `strings /firmware/image/modem.b13 | grep "\-M8992" | head -1`
-
 #
 # start ril-daemon only for targets on which radio is present
 #
@@ -64,8 +61,7 @@ esac
 case "$baseband" in
     "msm" | "csfb" | "svlte2a" | "mdm" | "mdm2" | "sglte" | "sglte2" | "dsda2" | "unknown" | "dsda3")
     start qmuxd
-    start ipacm-diag
-    start ipacm
+
     case "$baseband" in
         "svlte2a" | "csfb")
           start qmiproxy

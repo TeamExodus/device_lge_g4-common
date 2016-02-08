@@ -114,13 +114,15 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUEDROID_VENDOR_CONF := device/lge/g4-common/bluetooth/libbt_vndcfg.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/g4-common/bluetooth
 
+# RIL
+BOARD_RIL_CLASS := ../../../device/lge/g4-common/ril/
+
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
-BOARD_VENDOR_QCOM_CAMERA_USES_NV21_FORMAT := true
 COMMON_GLOBAL_CFLAGS += -DLG_CAMERA_HARDWARE
 
 # Display
@@ -143,6 +145,9 @@ EXTENDED_FONT_FOOTPRINT := true
 TARGET_PROVIDES_LIBLIGHT := true
 
 # Offmode Charging
+BOARD_CHARGER_DISABLE_INIT_BLANK := true
+#BOARD_CHARGER_ENABLE_SUSPEND := true
+
 COMMON_GLOBAL_CFLAGS += \
     -DBOARD_CHARGING_CMDLINE_NAME='"androidboot.mode"' \
     -DBOARD_CHARGING_CMDLINE_VALUE='"chargerlogo"'
@@ -157,6 +162,9 @@ BOARD_USES_QCOM_HARDWARE := true
 # Init
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
+# Keystore
+TARGET_PROVIDES_KEYMASTER := true
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
@@ -170,6 +178,10 @@ TARGET_INIT_VENDOR_LIB := libinit_msm
 # NFC
 BOARD_NFC_CHIPSET := pn547
 BOARD_NFC_DEVICE := "/dev/pn547"
+
+# HAL static libs
+BOARD_HAL_STATIC_LIBRARIES := \
+    libhealthd.msm8992
 
 # CMHW
 BOARD_USES_CYANOGEN_HARDWARE := true

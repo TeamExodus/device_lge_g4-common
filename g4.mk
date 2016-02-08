@@ -73,6 +73,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.rc \
+    init.qcom.power.rc \
     init.qcom.usb.rc \
     ueventd.qcom.rc
 
@@ -83,7 +84,8 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.qcom.post_boot.sh \
     init.qcom.uicc.sh \
-    init.msm8992.sensor.sh
+    init.msm8992.sensor.sh \
+    init.baseband.sh
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -181,6 +183,10 @@ PRODUCT_PACKAGES += \
     memtrack.msm8992 \
     liboverlay
 
+# QuickCircle Case App
+PRODUCT_PACKAGES += \
+    QuickCircle
+
 # Keystore
 PRODUCT_PACKAGES += \
     keystore.msm8992 \
@@ -189,9 +195,6 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8992
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
 
 # Lights
 PRODUCT_PACKAGES += \
