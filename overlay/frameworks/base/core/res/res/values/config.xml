@@ -319,4 +319,7 @@
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
 
+    <!-- show battery full notifaction -->
+    <bool name="config_showBatteryFullyChargedNotification">true</bool>
+
 </resources>
