@@ -371,7 +371,7 @@
     <!-- QUAT MI2S SPEAKER -->
 
     <!-- Initial gain of TI TAS2552 amp -->
-    <ctl name="Speaker Driver Playback Volume" value="14" />
+    <ctl name="Speaker Driver Playback Volume" value="10" />
 
     <!-- Opalum tuning path selection -->
     <ctl name="OPALUM_AFE" value="AUDIO_TUNING" />
@@ -1365,7 +1365,7 @@
 
     <!-- CM: playback OUT handset speaker -->
     <path name="speaker">
-        <ctl name="Speaker Driver Playback Volume" value="14" />
+        <ctl name="Speaker Driver Playback Volume" value="10" />
     </path>
 
    <path name="sidetone-iir">
@@ -1548,14 +1548,14 @@
     <!-- CM: voice-call OUT handset (h815) -->
     <path name="voice-handset">
         <path name="handset" />
-        <ctl name="RX1 Digital Volume" value="84" />
+        <ctl name="RX1 Digital Volume" value="88" />
         <ctl name="EAR PA Gain" value="POS_6_DB" />
     </path>
 
     <!-- CM: voice-call OUT handset (h811) -->
     <path name="voice-handset-tmus">
         <path name="handset" />
-        <ctl name="RX1 Digital Volume" value="84" />
+        <ctl name="RX1 Digital Volume" value="88" />
         <ctl name="EAR PA Gain" value="POS_6_DB" />
     </path>
 
