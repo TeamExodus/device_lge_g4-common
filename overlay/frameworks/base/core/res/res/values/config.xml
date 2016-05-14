@@ -333,4 +333,7 @@
     <!-- Flag specifying whether VoLTE availability is based on provisioning -->
     <bool name="config_carrier_volte_provisioned">false</bool>
 
+    <!-- Whether device supports lockscreen rotation --> 
+    <bool name="config_enableLockScreenRotation">true</bool>
+
 </resources>
