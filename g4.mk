@@ -252,8 +252,3 @@ PRODUCT_PACKAGES += \
     libcnefeatureconfig \
     librmnetctl \
     libxml2
-
-
-# device handler
-PRODUCT_PACKAGES += \
-    DeviceHandler
