@@ -8,11 +8,15 @@
     "target_path": "device/qcom/common"
   },
   {
-    "repository": "usmcamgrimm/android_hardware_sony_thermanager",
+    "repository": "usmcamgrimm/hardware_sony_thermanager",
     "target_path": "hardware/sony/thermanager"
   },
   {
-    "repository": "usmcamgrimm/android_hardware_sony_timekeep",
+    "repository": "usmcamgrimm/hardware_sony_timekeep",
     "target_path": "hardware/sony/timekeep"
+  },
+  {
+    "repository": "usmcamgrimm/vendor_lge_g4-common",
+    "target_path": "vendor/lge/g4-common"
   }
 ]
