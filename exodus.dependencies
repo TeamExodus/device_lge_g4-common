@@ -1,6 +1,6 @@
 [
   {
-    "repository": "usmcamgrimm/kernel_lge_msm8992",
+    "repository": "TeamExodus/kernel_lge_msm8992",
     "target_path": "kernel/lge/msm8992"
   },
   {
@@ -8,15 +8,15 @@
     "target_path": "device/qcom/common"
   },
   {
-    "repository": "usmcamgrimm/hardware_sony_thermanager",
+    "repository": "TeamExodus/hardware_sony_thermanager",
     "target_path": "hardware/sony/thermanager"
   },
   {
-    "repository": "usmcamgrimm/hardware_sony_timekeep",
+    "repository": "TeamExodus/hardware_sony_timekeep",
     "target_path": "hardware/sony/timekeep"
   },
   {
-    "repository": "usmcamgrimm/vendor_lge_g4-common",
+    "repository": "TeamExodus/vendor_lge_g4-common",
     "target_path": "vendor/lge/g4-common"
   }
 ]
